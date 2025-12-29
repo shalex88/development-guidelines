@@ -12,9 +12,10 @@
 - One public class/interface per header where practical
 - Headers always start with `#pragma once`
 - Prefer forward declarations over unnecessary includes (minimize coupling)
+- Always add comment on namespace closures
 
 ## Compilation Units & Linkage
-- No `static` functions in headers—prefer anonymous namespaces in `.cpp` for internal linkage
+- No `static` functions in classes, prefer anonymous namespaces for internal linkage
 - Keep headers free of implementation details; minimize transitive includes
 - Avoid macros except for include guards handled by `#pragma once` and controlled feature flags
 
